@@ -1,0 +1,474 @@
+INFO:     Started server process [2105543]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     34.116.19.196:58068 - "POST /trigger/all HTTP/1.1" 200 OK
+Starting execution: /home/admin/petpooja/pporder/main.py
+Starting execution: /home/admin/petpooja/ppitemorder/main.py
+Starting execution: /home/admin/petpooja/ppgrowthreport/main.py
+Summary email sent to chummuch@pinkadrakft.com
+INFO:     34.116.19.193:50742 - "POST /trigger/all HTTP/1.1" 200 OK
+g to yesterday in IST: 2026-04-17
+
+>>> Running pipeline for 2026-04-17 (Headless=True) ...
+[21:12:16] Step 1: Reading input file...
+[21:12:16] Step 4: Saving output file as 17 Apr Sales.xlsx...
+[21:12:16] Step 5: Archiving original file.
+
+ERRORS:
+2026-04-17 21:12:00 [INFO] --- Starting Pipeline for 2026-04-17 ---
+2026-04-17 21:12:00 [INFO] DataCleaner paths initialized: Download=/home/admin/petpooja/playwrightprofile/downloads, Processed=/home/admin/petpooja/playwrightprofile/downloads/processed
+2026-04-17 21:12:00 [INFO] Initiating Playwright Headless extraction...
+2026-04-17 21:12:00 [INFO] Initialized directories: Profile=/home/admin/petpooja/playwrightprofile, Download=/home/admin/petpooja/playwrightprofile/downloads
+2026-04-17 21:12:00 [INFO] [FALLBACK] Starting Playwright automation for 2026-04-17
+2026-04-17 21:12:03 [INFO] [FALLBACK] Navigating to https://billing.petpooja.com/reports/order_summary_ho
+2026-04-17 21:12:10 [INFO] [FALLBACK] Already authenticated via persistent profile.
+2026-04-17 21:12:12 [INFO] [FALLBACK] JS injected date into 2 inputs.
+2026-04-17 21:12:12 [INFO] [FALLBACK] Clicked Export/Search button.
+2026-04-17 21:12:13 [INFO] [FALLBACK] Extracted S3 URL from network: https://reportsfile-live.s3-ap-southeast-1.amazonaws.com/ordersummary/320816/Order_Summary_Report_320816_2026-04-17_2026-04-17.csv
+2026-04-17 21:12:13 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_report.csv
+2026-04-17 21:12:13 [INFO] [FALLBACK] Download completed successfully: 2026-04-17_report.csv
+2026-04-17 21:12:13 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:12:13 [INFO] [FALLBACK] Successfully clicked 'Clear' for 2026-04-17 to 2026-04-17
+2026-04-17 21:12:16 [INFO] Playwright extraction completed successfully.
+2026-04-17 21:12:16 [INFO] Starting Data Cleaning for 2026-04-17_report.csv...
+2026-04-17 21:12:16 [INFO] DataCleaner paths initialized: Download=/home/admin/petpooja/playwrightprofile/downloads, Processed=/home/admin/petpooja/playwrightprofile/downloads/processed
+2026-04-17 21:12:16 [INFO] Processing report: 2026-04-17_report.csv
+2026-04-17 21:12:16 [INFO] Reading input file: 2026-04-17_report.csv...
+2026-04-17 21:12:16 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:12:16 [INFO] Standardizing types and initializing blank metrics...
+2026-04-17 21:12:16 [INFO] Extended columns (post-Customer_Paid) successfully nullified.
+2026-04-17 21:12:16 [INFO] Transformation complete. DataFrame shape: (552, 42)
+2026-04-17 21:12:16 [INFO] Saving cleaned report to: 17 Apr Sales.xlsx...
+2026-04-17 21:12:16 [INFO] Moved original file to processed folder: 2026-04-17_report.csv
+2026-04-17 21:12:16 [INFO] Data cleaning finished: 17 Apr Sales.xlsx
+2026-04-17 21:12:16 [INFO] Starting PostgreSQL upload process...
+2026-04-17 21:12:17 [INFO] Database engine initialized successfully.
+2026-04-17 21:12:17 [INFO] Preparing to insert 552 records into Petpooja.pp_orders...
+2026-04-17 21:12:20 [INFO] Successfully upserted 552 records into Petpooja.pp_orders.
+2026-04-17 21:12:20 [INFO] PostgreSQL upload success: 552 records upserted.
+2026-04-17 21:12:20 [INFO] --- Pipeline Completed Successfully ---
+
+--- Project: /home/admin/petpooja/ppitemorder ---
+No date supplied — defaulting to yesterday in IST: 2026-04-17
+
+>>> Running pipeline for 2026-04-17 (Headless=True) ...
+[21:12:51] Step 1: Reading input file...
+[21:12:51] Step 4: Saving output file as 17 Apr Sales.xlsx...
+[21:12:51] Step 5: Archiving original file.
+
+ERRORS:
+2026-04-17 21:12:22 [INFO] --- Starting Pipeline for 2026-04-17 ---
+2026-04-17 21:12:22 [INFO] Initiating Playwright Headless extraction...
+2026-04-17 21:12:22 [INFO] [FALLBACK] Starting Playwright automation for 2026-04-17
+2026-04-17 21:12:24 [INFO] [FALLBACK] Navigating to https://billing.petpooja.com/reports/order_summary_item
+2026-04-17 21:12:30 [INFO] [FALLBACK] Already authenticated via persistent profile.
+2026-04-17 21:12:32 [INFO] [FALLBACK] JS injected date into 2 inputs.
+2026-04-17 21:12:33 [INFO] [FALLBACK] Clicked Export/Search button.
+2026-04-17 21:12:48 [WARNING] [FALLBACK] Network interception timed out. Fallback to DOM parsing...
+2026-04-17 21:12:48 [INFO] [FALLBACK] Extracted S3 URL from DOM: https://reportsfile-live.s3-ap-southeast-1.amazonaws.com/ordersummaryitem/320816/Order_Summary_Item_Report_320816_2026-04-17_2026-04-17.csv
+2026-04-17 21:12:48 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_report.csv
+2026-04-17 21:12:48 [INFO] [FALLBACK] Download completed successfully: 2026-04-17_report.csv
+2026-04-17 21:12:48 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:12:48 [INFO] [FALLBACK] Successfully clicked 'Clear' for 2026-04-17 to 2026-04-17
+2026-04-17 21:12:51 [INFO] Playwright extraction completed successfully.
+2026-04-17 21:12:51 [INFO] Starting Data Cleaning for 2026-04-17_report.csv...
+2026-04-17 21:12:51 [INFO] Processing report: 2026-04-17_report.csv
+2026-04-17 21:12:51 [INFO] Reading input file: 2026-04-17_report.csv...
+2026-04-17 21:12:51 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:12:51 [INFO] Column 'sub_order_type' missing. Defaulting 'Platform' from 'Order_Type'.
+2026-04-17 21:12:51 [INFO] Executing Financial Analytics Logic...
+2026-04-17 21:12:51 [INFO] Transformation complete. DataFrame shape: (869, 39)
+2026-04-17 21:12:51 [INFO] Saving cleaned report to: 17 Apr Sales.xlsx...
+2026-04-17 21:12:51 [INFO] Moved original file to processed folder: /home/admin/petpooja/playwrightprofile/downloads/processed/2026-04-17_report.csv
+2026-04-17 21:12:51 [INFO] Data cleaning finished: 17 Apr Sales.xlsx
+2026-04-17 21:12:51 [INFO] Starting PostgreSQL upload process...
+2026-04-17 21:12:52 [INFO] Database engine initialized successfully.
+2026-04-17 21:12:52 [INFO] Preparing to insert 869 records into Petpooja.pp_item_orders...
+2026-04-17 21:12:53 [INFO] Successfully upserted 869 records into Petpooja.pp_item_orders.
+2026-04-17 21:12:53 [INFO] PostgreSQL upload success: 869 records upserted.
+2026-04-17 21:12:53 [INFO] --- Pipeline Completed Successfully ---
+
+--- Project: /home/admin/petpooja/ppgrowthreport ---
+No date supplied — defaulting to yesterday in IST: 2026-04-17
+
+>>> Running pipeline for 2026-04-17 (Headless=True) ...
+
+ERRORS:
+2026-04-17 21:12:54 [INFO] --- Starting Pipeline for 2026-04-17 ---
+2026-04-17 21:12:54 [INFO] DataCleaner paths initialized: Download=/home/admin/petpooja/playwrightprofile/downloads, Processed=/home/admin/petpooja/playwrightprofile/processed
+2026-04-17 21:12:54 [INFO] Purged 2 stale files from downloads directory.
+2026-04-17 21:12:54 [INFO] Initiating Playwright Headless extraction...
+2026-04-17 21:12:54 [INFO] [FALLBACK] Starting Playwright automation for 2026-04-17
+2026-04-17 21:12:57 [INFO] [FALLBACK] Verification: Navigating to https://billing.petpooja.com/
+2026-04-17 21:13:04 [INFO] [FALLBACK] Page State - URL: https://billing.petpooja.com/users/dashboard | Login Visible: False
+2026-04-17 21:13:04 [INFO] [FALLBACK] Status: Session Active via Persistent Profile.
+2026-04-17 21:13:04 [INFO] [FALLBACK] Navigating to Reports Index to sync outlet context: https://billing.petpooja.com/custom_reports/reports/
+2026-04-17 21:13:09 [INFO] [OUTLET] Switching Target: Pink Adrak HBP
+2026-04-17 21:13:09 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak HBP
+2026-04-17 21:13:09 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak HBP'...
+2026-04-17 21:13:12 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak HBP'
+2026-04-17 21:13:12 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak', 'Pink Adrak - ABC', 'Pink Adrak - BS', 'Pink Adrak Sector 31', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:13:13 [INFO] [OUTLET] Waiting for session reload...
+2026-04-17 21:13:18 [INFO] [OUTLET] Selection completed. Current: Pink Adrak HBP
+2026-04-17 21:13:18 [INFO] [FALLBACK] Final hop: Navigating to https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:13:24 [INFO] [FALLBACK] Successfully landed on Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:13:24 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak HBP
+2026-04-17 21:13:24 [INFO] [OUTLET] Switching Target: Pink Adrak HBP
+2026-04-17 21:13:24 [INFO] [OUTLET] Already on correct outlet: Pink Adrak HBP
+2026-04-17 21:13:24 [INFO] [FALLBACK] Fresh Navigation to Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:13:30 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_from, .start_fromdate, input[name='from_date']
+2026-04-17 21:13:31 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_to, .end_todate, input[name='to_date']
+2026-04-17 21:13:33 [INFO] [FALLBACK] Clicked Search button.
+2026-04-17 21:13:35 [INFO] [FALLBACK] Waiting for data/download (Max 90s)...
+2026-04-17 21:13:49 [INFO] [FALLBACK] DataTable Excel button detected. Triggering download...
+2026-04-17 21:13:49 [INFO] [SUCCESS] Local DataTable export saved: /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_HBP_report.xlsx
+2026-04-17 21:13:49 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_HBP_report.xlsx
+2026-04-17 21:13:49 [INFO] [OUTLET-LOOP] Successfully triggered and downloaded report for Pink Adrak HBP
+2026-04-17 21:13:49 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:13:54 [WARNING] [FALLBACK] Could not find 'Clear' button for 2026-04-17 to 2026-04-17 in the table.
+2026-04-17 21:13:54 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak Elan Epic
+2026-04-17 21:13:54 [INFO] [OUTLET] Switching Target: Pink Adrak Elan Epic
+2026-04-17 21:13:54 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak Elan Epic
+2026-04-17 21:13:55 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak Elan Epic'...
+2026-04-17 21:13:58 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak Elan Epic'
+2026-04-17 21:13:58 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak', 'Pink Adrak - ABC', 'Pink Adrak - BS', 'Pink Adrak Sector 31', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:13:59 [INFO] [OUTLET] Waiting for session reload...
+2026-04-17 21:14:04 [INFO] [OUTLET] Selection completed. Current: Pink Adrak Elan Epic
+2026-04-17 21:14:04 [INFO] [FALLBACK] Fresh Navigation to Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:14:10 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_from, .start_fromdate, input[name='from_date']
+2026-04-17 21:14:10 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_to, .end_todate, input[name='to_date']
+2026-04-17 21:14:12 [INFO] [FALLBACK] Clicked Search button.
+2026-04-17 21:14:14 [INFO] [FALLBACK] Waiting for data/download (Max 90s)...
+2026-04-17 21:14:28 [INFO] [FALLBACK] DataTable Excel button detected. Triggering download...
+2026-04-17 21:14:28 [INFO] [SUCCESS] Local DataTable export saved: /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_Elan_Epic_report.xlsx
+2026-04-17 21:14:28 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_Elan_Epic_report.xlsx
+2026-04-17 21:14:28 [INFO] [OUTLET-LOOP] Successfully triggered and downloaded report for Pink Adrak Elan Epic
+2026-04-17 21:14:28 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:14:33 [WARNING] [FALLBACK] Could not find 'Clear' button for 2026-04-17 to 2026-04-17 in the table.
+2026-04-17 21:14:33 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak Satkar
+2026-04-17 21:14:33 [INFO] [OUTLET] Switching Target: Pink Adrak Satkar
+2026-04-17 21:14:34 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak Satkar
+2026-04-17 21:14:34 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak Satkar'...
+2026-04-17 21:14:38 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak Satkar'
+2026-04-17 21:14:38 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak HBP', 'Pink Adrak', 'Pink Adrak - ABC', 'Pink Adrak - BS', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:14:38 [INFO] [OUTLET] Waiting for session reload...
+2026-04-17 21:14:43 [INFO] [OUTLET] Selection completed. Current: Pink Adrak Satkar
+2026-04-17 21:14:43 [INFO] [FALLBACK] Fresh Navigation to Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:14:49 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_from, .start_fromdate, input[name='from_date']
+2026-04-17 21:14:49 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_to, .end_todate, input[name='to_date']
+2026-04-17 21:14:52 [INFO] [FALLBACK] Clicked Search button.
+2026-04-17 21:14:54 [INFO] [FALLBACK] Waiting for data/download (Max 90s)...
+2026-04-17 21:15:08 [INFO] [FALLBACK] DataTable Excel button detected. Triggering download...
+2026-04-17 21:15:08 [INFO] [SUCCESS] Local DataTable export saved: /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_Satkar_report.xlsx
+2026-04-17 21:15:08 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_Satkar_report.xlsx
+2026-04-17 21:15:08 [INFO] [OUTLET-LOOP] Successfully triggered and downloaded report for Pink Adrak Satkar
+2026-04-17 21:15:08 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:15:14 [WARNING] [FALLBACK] Could not find 'Clear' button for 2026-04-17 to 2026-04-17 in the table.
+2026-04-17 21:15:14 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak Sector 31
+2026-04-17 21:15:14 [INFO] [OUTLET] Switching Target: Pink Adrak Sector 31
+2026-04-17 21:15:14 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak Sector 31
+2026-04-17 21:15:14 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak Sector 31'...
+2026-04-17 21:15:18 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak Sector 31'
+2026-04-17 21:15:18 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak Elan Epic', 'Pink Adrak HBP', 'Pink Adrak', 'Pink Adrak - ABC', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:15:18 [INFO] [OUTLET] Waiting for session reload...
+2026-04-17 21:15:23 [INFO] [OUTLET] Selection completed. Current: Pink Adrak Sector 31
+2026-04-17 21:15:23 [INFO] [FALLBACK] Fresh Navigation to Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:15:29 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_from, .start_fromdate, input[name='from_date']
+2026-04-17 21:15:29 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_to, .end_todate, input[name='to_date']
+2026-04-17 21:15:32 [INFO] [FALLBACK] Clicked Search button.
+2026-04-17 21:15:34 [INFO] [FALLBACK] Waiting for data/download (Max 90s)...
+2026-04-17 21:15:47 [INFO] [FALLBACK] DataTable Excel button detected. Triggering download...
+2026-04-17 21:15:48 [INFO] [SUCCESS] Local DataTable export saved: /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_Sector_31_report.xlsx
+2026-04-17 21:15:48 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_Sector_31_report.xlsx
+2026-04-17 21:15:48 [INFO] [OUTLET-LOOP] Successfully triggered and downloaded report for Pink Adrak Sector 31
+2026-04-17 21:15:48 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:15:53 [WARNING] [FALLBACK] Could not find 'Clear' button for 2026-04-17 to 2026-04-17 in the table.
+2026-04-17 21:15:53 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak - BS
+2026-04-17 21:15:53 [INFO] [OUTLET] Switching Target: Pink Adrak - BS
+2026-04-17 21:15:53 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak - BS
+2026-04-17 21:15:53 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak - BS'...
+2026-04-17 21:15:57 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak - BS'
+2026-04-17 21:15:57 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak Satkar', 'Pink Adrak Elan Epic', 'Pink Adrak HBP', 'Pink Adrak', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:15:57 [INFO] [OUTLET] Waiting for session reload...
+2026-04-17 21:16:02 [INFO] [OUTLET] Selection completed. Current: Pink Adrak - BS
+2026-04-17 21:16:02 [INFO] [FALLBACK] Fresh Navigation to Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:16:09 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_from, .start_fromdate, input[name='from_date']
+2026-04-17 21:16:09 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_to, .end_todate, input[name='to_date']
+2026-04-17 21:16:11 [INFO] [FALLBACK] Clicked Search button.
+2026-04-17 21:16:13 [INFO] [FALLBACK] Waiting for data/download (Max 90s)...
+2026-04-17 21:16:27 [INFO] [FALLBACK] DataTable Excel button detected. Triggering download...
+2026-04-17 21:16:27 [INFO] [SUCCESS] Local DataTable export saved: /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_-_BS_report.xlsx
+2026-04-17 21:16:27 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_-_BS_report.xlsx
+2026-04-17 21:16:27 [INFO] [OUTLET-LOOP] Successfully triggered and downloaded report for Pink Adrak - BS
+2026-04-17 21:16:27 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:16:32 [WARNING] [FALLBACK] Could not find 'Clear' button for 2026-04-17 to 2026-04-17 in the table.
+2026-04-17 21:16:32 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak - ABC
+2026-04-17 21:16:32 [INFO] [OUTLET] Switching Target: Pink Adrak - ABC
+2026-04-17 21:16:33 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak - ABC
+2026-04-17 21:16:33 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak - ABC'...
+2026-04-17 21:16:37 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak - ABC'
+2026-04-17 21:16:37 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak Sector 31', 'Pink Adrak Satkar', 'Pink Adrak Elan Epic', 'Pink Adrak HBP', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:16:37 [INFO] [OUTLET] Waiting for session reload...
+2026-04-17 21:16:42 [INFO] [OUTLET] Selection completed. Current: Pink Adrak - ABC
+2026-04-17 21:16:42 [INFO] [FALLBACK] Fresh Navigation to Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:16:48 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_from, .start_fromdate, input[name='from_date']
+2026-04-17 21:16:48 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_to, .end_todate, input[name='to_date']
+2026-04-17 21:16:50 [INFO] [FALLBACK] Clicked Search button.
+2026-04-17 21:16:52 [INFO] [FALLBACK] Waiting for data/download (Max 90s)...
+2026-04-17 21:17:07 [INFO] [FALLBACK] DataTable Excel button detected. Triggering download...
+2026-04-17 21:17:07 [INFO] [SUCCESS] Local DataTable export saved: /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_-_ABC_report.xlsx
+2026-04-17 21:17:07 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_-_ABC_report.xlsx
+2026-04-17 21:17:07 [INFO] [OUTLET-LOOP] Successfully triggered and downloaded report for Pink Adrak - ABC
+2026-04-17 21:17:07 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:17:12 [WARNING] [FALLBACK] Could not find 'Clear' button for 2026-04-17 to 2026-04-17 in the table.
+2026-04-17 21:17:12 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak-B2B
+2026-04-17 21:17:12 [INFO] [OUTLET] Switching Target: Pink Adrak-B2B
+2026-04-17 21:17:12 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak-B2B
+2026-04-17 21:17:13 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak-B2B'...
+2026-04-17 21:17:16 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak-B2B'
+2026-04-17 21:17:16 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak - BS', 'Pink Adrak Sector 31', 'Pink Adrak Satkar', 'Pink Adrak Elan Epic', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:17:16 [WARNING] [OUTLET] Could not find exact match for 'Pink Adrak-B2B' in dropdown.
+2026-04-17 21:17:16 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak-B2B. Skipping.
+2026-04-17 21:17:16 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak
+2026-04-17 21:17:16 [INFO] [OUTLET] Switching Target: Pink Adrak
+2026-04-17 21:17:16 [INFO] [POPUP] Closing modal via .fancybox-close-small
+2026-04-17 21:17:18 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak
+2026-04-17 21:17:19 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak'...
+2026-04-17 21:17:22 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak'
+2026-04-17 21:17:22 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak - BS', 'Pink Adrak Sector 31', 'Pink Adrak Satkar', 'Pink Adrak Elan Epic', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-17 21:17:22 [INFO] [OUTLET] Waiting for session reload...
+2026-04-17 21:17:27 [INFO] [OUTLET] Selection completed. Current: Pink Adrak
+2026-04-17 21:17:27 [INFO] [FALLBACK] Fresh Navigation to Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-17 21:17:33 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_from, .start_fromdate, input[name='from_date']
+2026-04-17 21:17:33 [INFO] [FALLBACK] Injected date 2026-04-17 00:00:00 into #re_filter_filed_1_5_0_to, .end_todate, input[name='to_date']
+2026-04-17 21:17:36 [INFO] [FALLBACK] Clicked Search button.
+2026-04-17 21:17:38 [INFO] [FALLBACK] Waiting for data/download (Max 90s)...
+2026-04-17 21:17:52 [INFO] [FALLBACK] DataTable Excel button detected. Triggering download...
+2026-04-17 21:17:52 [INFO] [SUCCESS] Local DataTable export saved: /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_report.xlsx
+2026-04-17 21:17:52 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_Pink_Adrak_report.xlsx
+2026-04-17 21:17:52 [INFO] [OUTLET-LOOP] Successfully triggered and downloaded report for Pink Adrak
+2026-04-17 21:17:52 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-17 21:17:57 [WARNING] [FALLBACK] Could not find 'Clear' button for 2026-04-17 to 2026-04-17 in the table.
+2026-04-17 21:17:57 [INFO] 
+[SUCCESS] Completed 7/8 outlets.
+2026-04-17 21:17:58 [INFO] Playwright extraction completed successfully.
+2026-04-17 21:17:58 [INFO] Starting Data Cleaning and Multi-Outlet Aggregation...
+2026-04-17 21:17:58 [INFO] DataCleaner paths initialized: Download=/home/admin/petpooja/playwrightprofile/downloads, Processed=/home/admin/petpooja/playwrightprofile/processed
+2026-04-17 21:17:58 [INFO] Found 7 reports to aggregate.
+2026-04-17 21:17:58 [INFO] Stepping into: 2026-04-17_Pink_Adrak_Sector_31_report.xlsx
+2026-04-17 21:17:58 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:17:58 [INFO] Normalized columns: ['date', 'orders', 'invoice_nos', 'my_amount', 'discount', 'net_sales_ma___d', 'delivery_charge', 'container_charge', 'service_charge', 'total_tax', 'round_off', 'waived_off', 'total', 'online_tax_calculated', 'gst_paid_by_merchant', 'gst_paid_by_ecommerce', 'non_taxable', 'amount_cgst', 'cgst', 'amount_sgst', 'sgst', 'delivery_orders', 'delivery', 'pick_up_orders', 'pick_up', 'dine_in_orders', 'dine_in', 'zomato_orders', 'zomato_cod', 'zomato_other', 'swiggy_orders', 'swiggy_cod', 'swiggy_other', 'toing_orders', 'toing_cod', 'toing_other', 'not_paid', 'cash', 'card', 'due_payment', 'other_icici', 'upi', 'expenses']
+2026-04-17 21:17:58 [INFO] Transformation complete. DataFrame shape: (1, 57)
+2026-04-17 21:17:58 [INFO] Stepping into: 2026-04-17_Pink_Adrak_Satkar_report.xlsx
+2026-04-17 21:17:58 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:17:58 [INFO] Normalized columns: ['date', 'orders', 'invoice_nos', 'my_amount', 'discount', 'net_sales_ma___d', 'delivery_charge', 'container_charge', 'service_charge', 'total_tax', 'round_off', 'waived_off', 'total', 'online_tax_calculated', 'gst_paid_by_merchant', 'gst_paid_by_ecommerce', 'non_taxable', 'amount_cgst', 'cgst', 'amount_sgst', 'sgst', 'delivery_orders', 'delivery', 'pick_up_orders', 'pick_up', 'dine_in_orders', 'dine_in', 'zomato_orders', 'zomato_cod', 'zomato_other', 'swiggy_orders', 'swiggy_cod', 'swiggy_other', 'toing_orders', 'toing_cod', 'toing_other', 'not_paid', 'cash', 'card', 'due_payment', 'other_paytm', 'other_phonepe', 'other_gpay', 'other_icici', 'other_zomato_dinein', 'other_swiggy_dineout', 'wallet_petpooja_static_qr', 'upi', 'expenses']
+2026-04-17 21:17:58 [INFO] Transformation complete. DataFrame shape: (1, 60)
+2026-04-17 21:17:58 [INFO] Stepping into: 2026-04-17_Pink_Adrak_report.xlsx
+2026-04-17 21:17:58 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:17:58 [INFO] Normalized columns: ['date', 'orders', 'invoice_nos', 'my_amount', 'discount', 'net_sales_ma___d', 'delivery_charge', 'container_charge', 'service_charge', 'total_tax', 'round_off', 'waived_off', 'total', 'online_tax_calculated', 'gst_paid_by_merchant', 'gst_paid_by_ecommerce', 'non_taxable', 'amount_cgst', 'cgst', 'amount_sgst', 'sgst', 'delivery_orders', 'delivery', 'pick_up_orders', 'pick_up', 'dine_in_orders', 'dine_in', 'zomato_orders', 'zomato_cod', 'zomato_other', 'swiggy_orders', 'swiggy_cod', 'swiggy_other', 'toing_orders', 'toing_cod', 'toing_other', 'not_paid', 'cash', 'card', 'due_payment', 'other_paytm', 'other_phonepe', 'other_googlepay', 'other_upi', 'other_dine_out', 'other_paytm_deals', 'other_bank', 'other_icici', 'other_zomato_dine_in', 'wallet_upi', 'wallet_petpooja_static_qr', 'wallet_virtual', 'upi', 'expenses']
+2026-04-17 21:17:58 [INFO] Transformation complete. DataFrame shape: (1, 58)
+2026-04-17 21:17:58 [INFO] Stepping into: 2026-04-17_Pink_Adrak_-_ABC_report.xlsx
+2026-04-17 21:17:58 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:17:58 [INFO] Normalized columns: ['date', 'orders', 'invoice_nos', 'my_amount', 'discount', 'net_sales_ma___d', 'delivery_charge', 'container_charge', 'service_charge', 'total_tax', 'round_off', 'waived_off', 'total', 'online_tax_calculated', 'gst_paid_by_merchant', 'gst_paid_by_ecommerce', 'non_taxable', 'amount_cgst', 'cgst', 'amount_sgst', 'sgst', 'delivery_orders', 'delivery', 'pick_up_orders', 'pick_up', 'dine_in_orders', 'dine_in', 'swiggy_orders', 'swiggy_cod', 'swiggy_other', 'toing_orders', 'toing_cod', 'toing_other', 'zomato_orders', 'zomato_cod', 'zomato_other', 'not_paid', 'cash', 'card', 'due_payment', 'other_upi', 'other_icici', 'other_zomato_dine_in', 'upi', 'expenses']
+2026-04-17 21:17:58 [INFO] Transformation complete. DataFrame shape: (1, 57)
+2026-04-17 21:17:58 [INFO] Stepping into: 2026-04-17_Pink_Adrak_-_BS_report.xlsx
+2026-04-17 21:17:58 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:17:58 [INFO] Normalized columns: ['date', 'orders', 'invoice_nos', 'my_amount', 'discount', 'net_sales_ma___d', 'delivery_charge', 'container_charge', 'service_charge', 'total_tax', 'round_off', 'waived_off', 'total', 'online_tax_calculated', 'gst_paid_by_merchant', 'gst_paid_by_ecommerce', 'non_taxable', 'amount_cgst', 'cgst', 'amount_sgst', 'sgst', 'delivery_orders', 'delivery', 'pick_up_orders', 'pick_up', 'dine_in_orders', 'dine_in', 'swiggy_orders', 'swiggy_cod', 'swiggy_other', 'toing_orders', 'toing_cod', 'toing_other', 'zomato_orders', 'zomato_cod', 'zomato_other', 'not_paid', 'cash', 'card', 'due_payment', 'other_other', 'other_paytm', 'other_icici', 'other_zomato_dine_in', 'upi', 'expenses']
+2026-04-17 21:17:58 [INFO] Transformation complete. DataFrame shape: (1, 58)
+2026-04-17 21:17:58 [INFO] Stepping into: 2026-04-17_Pink_Adrak_Elan_Epic_report.xlsx
+2026-04-17 21:17:58 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:17:58 [INFO] Normalized columns: ['date', 'orders', 'invoice_nos', 'my_amount', 'discount', 'net_sales_ma___d', 'delivery_charge', 'container_charge', 'service_charge', 'total_tax', 'round_off', 'waived_off', 'total', 'online_tax_calculated', 'gst_paid_by_merchant', 'gst_paid_by_ecommerce', 'non_taxable', 'amount_cgst', 'cgst', 'amount_sgst', 'sgst', 'delivery_orders', 'delivery', 'pick_up_orders', 'pick_up', 'dine_in_orders', 'dine_in', 'swiggy_orders', 'swiggy_cod', 'swiggy_other', 'toing_orders', 'toing_cod', 'toing_other', 'zomato_orders', 'zomato_cod', 'zomato_other', 'not_paid', 'cash', 'card', 'due_payment', 'other_bank', 'other_paytm', 'other_icici', 'other_zomato_dine_in', 'other_swiggy_dine_out', 'upi', 'expenses']
+2026-04-17 21:17:58 [INFO] Transformation complete. DataFrame shape: (1, 57)
+2026-04-17 21:17:58 [INFO] Stepping into: 2026-04-17_Pink_Adrak_HBP_report.xlsx
+2026-04-17 21:17:58 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-17 21:17:58 [INFO] Normalized columns: ['date', 'orders', 'invoice_nos', 'my_amount', 'discount', 'net_sales_ma___d', 'delivery_charge', 'container_charge', 'service_charge', 'total_tax', 'round_off', 'waived_off', 'total', 'online_tax_calculated', 'gst_paid_by_merchant', 'gst_paid_by_ecommerce', 'non_taxable', 'amount_cgst', 'cgst', 'amount_sgst', 'sgst', 'delivery_orders', 'delivery', 'pick_up_orders', 'pick_up', 'dine_in_orders', 'dine_in', 'menu_qr_code_orders', 'menu_qr_code_cod', 'menu_qr_code_other', 'swiggy_orders', 'swiggy_cod', 'swiggy_other', 'toing_orders', 'toing_cod', 'toing_other', 'zomato_orders', 'zomato_cod', 'zomato_other', 'not_paid', 'cash', 'card', 'due_payment', 'other_paytm', 'other_gpay', 'other_phonpay', 'other_upi', 'other_phonepe', 'other_bank', 'other_icici', 'other_zomato_dine_in', 'other_swiggy_dine_out', 'upi', 'expenses']
+2026-04-17 21:17:58 [INFO] Merging duplicate columns: ['Phonepe']
+2026-04-17 21:17:58 [INFO] Transformation complete. DataFrame shape: (1, 60)
+2026-04-17 21:17:58 [INFO] Archived: 2026-04-17_Pink_Adrak_Sector_31_report.xlsx
+2026-04-17 21:17:58 [INFO] Archived: 2026-04-17_Pink_Adrak_Satkar_report.xlsx
+2026-04-17 21:17:58 [INFO] Archived: 2026-04-17_Pink_Adrak_report.xlsx
+2026-04-17 21:17:58 [INFO] Archived: 2026-04-17_Pink_Adrak_-_ABC_report.xlsx
+2026-04-17 21:17:58 [INFO] Archived: 2026-04-17_Pink_Adrak_-_BS_report.xlsx
+2026-04-17 21:17:58 [INFO] Archived: 2026-04-17_Pink_Adrak_Elan_Epic_report.xlsx
+2026-04-17 21:17:58 [INFO] Archived: 2026-04-17_Pink_Adrak_HBP_report.xlsx
+2026-04-17 21:17:58 [INFO] Master report created: Master_Report_09_17_pm.xlsx
+2026-04-17 21:17:58 [INFO] Consolidated master report finished: Master_Report_09_17_pm.xlsx
+2026-04-17 21:17:58 [INFO] Starting PostgreSQL upload process...
+2026-04-17 21:17:59 [INFO] Database engine initialized successfully.
+2026-04-17 21:17:59 [INFO] Preparing to insert 7 records into Petpooja.pp_growth-report...
+2026-04-17 21:17:59 [INFO] Successfully upserted 7 records into Petpooja.pp_growth-report.
+2026-04-17 21:17:59 [INFO] PostgreSQL upload success: 7 records upserted.
+2026-04-17 21:17:59 [INFO] --- Pipeline Completed Successfully ---
+
+--- Project: /home/admin/petpooja/pporder ---
+No date supplied — defaulting to yesterday in IST: 2026-04-17
+
+>>> Running pipeline for 2026-04-17 (Headless=True) ...
+[02:30:21] Step 1: Reading input file...
+[02:30:21] Step 4: Saving output file as 17 Apr Sales.xlsx...
+[02:30:22] Step 5: Archiving original file.
+
+ERRORS:
+2026-04-18 02:30:05 [INFO] --- Starting Pipeline for 2026-04-17 ---
+2026-04-18 02:30:05 [INFO] DataCleaner paths initialized: Download=/home/admin/petpooja/playwrightprofile/downloads, Processed=/home/admin/petpooja/playwrightprofile/downloads/processed
+2026-04-18 02:30:05 [INFO] Initiating Playwright Headless extraction...
+2026-04-18 02:30:05 [INFO] Initialized directories: Profile=/home/admin/petpooja/playwrightprofile, Download=/home/admin/petpooja/playwrightprofile/downloads
+2026-04-18 02:30:05 [INFO] [FALLBACK] Starting Playwright automation for 2026-04-17
+2026-04-18 02:30:08 [INFO] [FALLBACK] Navigating to https://billing.petpooja.com/reports/order_summary_ho
+2026-04-18 02:30:15 [INFO] [FALLBACK] Already authenticated via persistent profile.
+2026-04-18 02:30:17 [INFO] [FALLBACK] JS injected date into 2 inputs.
+2026-04-18 02:30:17 [INFO] [FALLBACK] Clicked Export/Search button.
+2026-04-18 02:30:18 [INFO] [FALLBACK] Extracted S3 URL from network: https://reportsfile-live.s3-ap-southeast-1.amazonaws.com/ordersummary/320816/Order_Summary_Report_320816_2026-04-17_2026-04-17.csv
+2026-04-18 02:30:18 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_report.csv
+2026-04-18 02:30:19 [INFO] [FALLBACK] Download completed successfully: 2026-04-17_report.csv
+2026-04-18 02:30:19 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-18 02:30:19 [INFO] [FALLBACK] Successfully clicked 'Clear' for 2026-04-17 to 2026-04-17
+2026-04-18 02:30:21 [INFO] Playwright extraction completed successfully.
+2026-04-18 02:30:21 [INFO] Starting Data Cleaning for 2026-04-17_report.csv...
+2026-04-18 02:30:21 [INFO] DataCleaner paths initialized: Download=/home/admin/petpooja/playwrightprofile/downloads, Processed=/home/admin/petpooja/playwrightprofile/downloads/processed
+2026-04-18 02:30:21 [INFO] Processing report: 2026-04-17_report.csv
+2026-04-18 02:30:21 [INFO] Reading input file: 2026-04-17_report.csv...
+2026-04-18 02:30:21 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-18 02:30:21 [INFO] Standardizing types and initializing blank metrics...
+2026-04-18 02:30:21 [INFO] Extended columns (post-Customer_Paid) successfully nullified.
+2026-04-18 02:30:21 [INFO] Transformation complete. DataFrame shape: (552, 42)
+2026-04-18 02:30:21 [INFO] Saving cleaned report to: 17 Apr Sales.xlsx...
+2026-04-18 02:30:22 [INFO] Moved original file to processed folder: 2026-04-17_report_20260418_023022.csv
+2026-04-18 02:30:22 [INFO] Data cleaning finished: 17 Apr Sales.xlsx
+2026-04-18 02:30:22 [INFO] Starting PostgreSQL upload process...
+2026-04-18 02:30:22 [INFO] Database engine initialized successfully.
+2026-04-18 02:30:22 [INFO] Preparing to insert 552 records into Petpooja.pp_orders...
+2026-04-18 02:30:24 [INFO] Successfully upserted 552 records into Petpooja.pp_orders.
+2026-04-18 02:30:24 [INFO] PostgreSQL upload success: 552 records upserted.
+2026-04-18 02:30:24 [INFO] --- Pipeline Completed Successfully ---
+
+--- Project: /home/admin/petpooja/ppitemorder ---
+No date supplied — defaulting to yesterday in IST: 2026-04-17
+
+>>> Running pipeline for 2026-04-17 (Headless=True) ...
+[02:31:00] Step 1: Reading input file...
+[02:31:02] Step 4: Saving output file as 17 Apr Sales.xlsx...
+[02:31:06] Step 5: Archiving original file.
+
+ERRORS:
+2026-04-18 02:30:27 [INFO] --- Starting Pipeline for 2026-04-17 ---
+2026-04-18 02:30:27 [INFO] Initiating Playwright Headless extraction...
+2026-04-18 02:30:27 [INFO] [FALLBACK] Starting Playwright automation for 2026-04-17
+2026-04-18 02:30:31 [INFO] [FALLBACK] Navigating to https://billing.petpooja.com/reports/order_summary_item
+2026-04-18 02:30:38 [INFO] [FALLBACK] Already authenticated via persistent profile.
+2026-04-18 02:30:40 [INFO] [FALLBACK] JS injected date into 2 inputs.
+2026-04-18 02:30:41 [INFO] [FALLBACK] Clicked Export/Search button.
+2026-04-18 02:30:56 [WARNING] [FALLBACK] Network interception timed out. Fallback to DOM parsing...
+2026-04-18 02:30:56 [INFO] [FALLBACK] Extracted S3 URL from DOM: https://reportsfile-live.s3-ap-southeast-1.amazonaws.com/ordersummaryitem/320816/Order_Summary_Item_Report_320816_2026-04-17_2026-04-17.csv
+2026-04-18 02:30:56 [INFO] [FALLBACK] Downloading report to /home/admin/petpooja/playwrightprofile/downloads/2026-04-17_report.csv
+2026-04-18 02:30:58 [INFO] [FALLBACK] Download completed successfully: 2026-04-17_report.csv
+2026-04-18 02:30:58 [INFO] [FALLBACK] Attempting to click 'Clear' button for 2026-04-17 to 2026-04-17
+2026-04-18 02:30:58 [INFO] [FALLBACK] Successfully clicked 'Clear' for 2026-04-17 to 2026-04-17
+2026-04-18 02:31:00 [INFO] Playwright extraction completed successfully.
+2026-04-18 02:31:00 [INFO] Starting Data Cleaning for 2026-04-17_report.csv...
+2026-04-18 02:31:00 [INFO] Processing report: 2026-04-17_report.csv
+2026-04-18 02:31:00 [INFO] Reading input file: 2026-04-17_report.csv...
+2026-04-18 02:31:01 [INFO] Initializing Data Transformation & Business Logic...
+2026-04-18 02:31:02 [INFO] Column 'sub_order_type' missing. Defaulting 'Platform' from 'Order_Type'.
+2026-04-18 02:31:02 [INFO] Executing Financial Analytics Logic...
+2026-04-18 02:31:02 [INFO] Transformation complete. DataFrame shape: (869, 39)
+2026-04-18 02:31:02 [INFO] Saving cleaned report to: 17 Apr Sales.xlsx...
+2026-04-18 02:31:06 [INFO] Moved original file to processed folder: /home/admin/petpooja/playwrightprofile/downloads/processed/2026-04-17_report.csv
+2026-04-18 02:31:06 [INFO] Data cleaning finished: 17 Apr Sales.xlsx
+2026-04-18 02:31:06 [INFO] Starting PostgreSQL upload process...
+2026-04-18 02:31:07 [INFO] Database engine initialized successfully.
+2026-04-18 02:31:07 [INFO] Preparing to insert 869 records into Petpooja.pp_item_orders...
+2026-04-18 02:31:08 [INFO] Successfully upserted 869 records into Petpooja.pp_item_orders.
+2026-04-18 02:31:08 [INFO] PostgreSQL upload success: 869 records upserted.
+2026-04-18 02:31:08 [INFO] --- Pipeline Completed Successfully ---
+
+--- Project: /home/admin/petpooja/ppgrowthreport ---
+No date supplied — defaulting to yesterday in IST: 2026-04-17
+
+>>> Running pipeline for 2026-04-17 (Headless=True) ...
+!!! Pipeline FAILED for 2026-04-17
+
+ERRORS:
+2026-04-18 02:31:10 [INFO] --- Starting Pipeline for 2026-04-17 ---
+2026-04-18 02:31:10 [INFO] DataCleaner paths initialized: Download=/home/admin/petpooja/playwrightprofile/downloads, Processed=/home/admin/petpooja/playwrightprofile/processed
+2026-04-18 02:31:10 [INFO] Purged 2 stale files from downloads directory.
+2026-04-18 02:31:10 [INFO] Initiating Playwright Headless extraction...
+2026-04-18 02:31:10 [INFO] [FALLBACK] Starting Playwright automation for 2026-04-17
+2026-04-18 02:31:13 [INFO] [FALLBACK] Verification: Navigating to https://billing.petpooja.com/
+2026-04-18 02:31:21 [INFO] [FALLBACK] Page State - URL: https://billing.petpooja.com/users/dashboard | Login Visible: False
+2026-04-18 02:31:21 [INFO] [FALLBACK] Status: Session Active via Persistent Profile.
+2026-04-18 02:31:21 [INFO] [FALLBACK] Navigating to Reports Index to sync outlet context: https://billing.petpooja.com/custom_reports/reports/
+2026-04-18 02:31:25 [INFO] [OUTLET] Switching Target: Pink Adrak HBP
+2026-04-18 02:31:26 [INFO] [OUTLET] Opening dropdown to select: Pink Adrak HBP
+2026-04-18 02:31:26 [INFO] [OUTLET] Search box found. Filtering for 'Pink Adrak HBP'...
+2026-04-18 02:31:30 [INFO] [OUTLET] Searching for exact match in dropdown: 'Pink Adrak HBP'
+2026-04-18 02:31:30 [INFO] [OUTLET] Available in dropdown: ['Pink Adrak - BS', 'Pink Adrak Sector 31', 'Pink Adrak Satkar', 'Pink Adrak Elan Epic', 'All Outlet', 'HO - JPR', '[ id : 157323 ]', 'JPR ZN', '', '[ id : 41808 ]', '[ id : 88019 ]', '[ id : 88022 ]', '[ id : 88023 ]', 'HO GGN', '[ id : 157331 ]', 'GGN ZN', '', '[ id : 112823 ]', '[ id : 324679 ]', '[ id : 324683 ]', '[ id : 338331 ]', '[ id : 414815 ]', 'Pink Adrak -B2B', '[ id : 415978 ]', 'Kalash PD', '[ id : 96509 ]', 'Kalash WH', '[ id : 96506 ]', 'Satvik PD', '[ id : 135987 ]', 'Satvik WH', '[ id : 135986 ]']
+2026-04-18 02:31:31 [INFO] [OUTLET] Waiting for session reload...
+2026-04-18 02:31:37 [INFO] [OUTLET] Selection completed. Current: Pink Adrak HBP
+2026-04-18 02:31:37 [INFO] [FALLBACK] Final hop: Navigating to https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-18 02:31:46 [INFO] [FALLBACK] Successfully landed on Report Page: https://billing.petpooja.com/custom_reports/view_report/7
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak HBP
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak HBP
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak HBP. Skipping.
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak Elan Epic
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak Elan Epic
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak Elan Epic. Skipping.
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak Satkar
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak Satkar
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak Satkar. Skipping.
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak Sector 31
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak Sector 31
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak Sector 31. Skipping.
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak - BS
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak - BS
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak - BS. Skipping.
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak - ABC
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak - ABC
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak - ABC. Skipping.
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak-B2B
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak-B2B
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak-B2B. Skipping.
+2026-04-18 02:31:46 [INFO] 
+[OUTLET-LOOP] Processing Outlet: Pink Adrak
+2026-04-18 02:31:46 [INFO] [OUTLET] Switching Target: Pink Adrak
+2026-04-18 02:31:46 [WARNING] [POPUP] Error while cleaning up popups: Locator.count: Target page, context or browser has been closed
+2026-04-18 02:31:46 [ERROR] [OUTLET] Interaction failed: Page.wait_for_selector: Target page, context or browser has been closed
+2026-04-18 02:31:46 [WARNING] [OUTLET-LOOP] Could not switch to Pink Adrak. Skipping.
+2026-04-18 02:31:47 [ERROR] Playwright failed to download the report.
+2026-04-18 02:31:47 [ERROR] Pipeline crashed: Report download failed.
+2026-04-18 02:31:47 [ERROR] Traceback (most recent call last):
+  File "/home/admin/petpooja/ppgrowthreport/main.py", line 99, in run_pipeline
+    raise RuntimeError("Report download failed.")
+RuntimeError: Report download failed.
+
+2026-04-18 02:31:47 [ERROR] --- Pipeline Failed ---

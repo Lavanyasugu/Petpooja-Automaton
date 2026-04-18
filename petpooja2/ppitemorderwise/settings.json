@@ -1,0 +1,13 @@
+{
+    "playwright_profile_dir": "/home/admin/petpooja2/playwrightprofile/",
+    "download_dir": "/home/admin/petpooja2/playwrightprofile/downloads",
+    "processed_dir": "/home/admin/petpooja2/playwrightprofile/downloads/processed",
+    "petpooja_url": "https://billing.petpooja.com/reports/order_summary_item",
+    "db_host": "ls-a0d9d5db2b9ca903f872a3fb74666a139738a39c.cngosk2ksv87.ap-south-1.rds.amazonaws.com",
+    "db_port": "5432",
+    "db_name": "Chummuch-DB",
+    "db_user": "chummuchdb",
+    "db_pass": "chummuchdb555",
+    "db_schema": "Petpooja",
+    "db_table": "order_summary_itemwise"
+}

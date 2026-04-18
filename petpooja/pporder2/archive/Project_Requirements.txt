@@ -1,0 +1,25 @@
+Automation of MAster Order Summary Report from Petpooja website. 
+
+**Initial Step**
+1. create a sqlitedb that tracks the execution steps below. 
+2. Decide which tables are required in your design phase from the steps explained below.
+
+**Initiate browser**
+1. Initiate a browser that can be controled from this program. The browser should not be detected as automated browser that is been controlled by a program. Consider making the fingerprints/footprints to behave like a normal browser.
+
+**Navigation to target page**
+1. Open this page:[url1] https://billing.petpooja.com/reports/order_summary_ho
+2. Wait for page loading.
+3. If the user is not logged in then the it will be redirected to [url2] https://billing.petpooja.com/
+4. Wait till user logs in and either it get directed to [url3] https://billing.petpooja.com/users/dashboard/
+5. One the page loading is done, navigate to this page again. [url1]
+6. If we reach this page after step3. ignore steps 3,4,5.
+
+**Choose Date**
+1. Code for the page [url1] is in the file master_order_page_source.html
+2. Choose the date from and to date to yesterday date. [the last processed date + 1] this SQLlite db table can be created and used to know which date has been processed last. 
+3. URL1_Screen_Capture.PNG - gives a reference of how the page look like. 
+4. After choosing the date, click on "Export Button" 
+5. It will create a download file link as in screenshot. 
+6. This file has to be downloaded the specific folder in pt that will be mentioned in a settings.json file. 
+7. Do not click on the "Download" lilnk. Instead use the link and download it through code so that it can be stored into a file. 

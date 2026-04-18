@@ -1,0 +1,14 @@
+{
+    "download_dir": "/home/admin/petpooja2/playwrightprofile/downloads",
+    "processed_dir": "/home/admin/petpooja2/playwrightprofile/processed",
+    "playwright_profile_dir": "/home/admin/petpooja2/playwrightprofile",
+    "petpooja_url": "https://billing.petpooja.com/custom_reports/view_report/78",
+    "db_host": "ls-a0d9d5db2b9ca903f872a3fb74666a139738a39c.cngosk2ksv87.ap-south-1.rds.amazonaws.com",
+    "db_port": "5432",
+    "db_name": "Chummuch-DB",
+    "db_user": "chummuchdb",
+    "db_pass": "chummuchdb555",
+    "db_schema": "Petpooja",
+    "db_table": "pp_kot-reports",
+    "petpooja_outlet_name": "Pink Adrak HBP, Pink Adrak Elan Epic, Pink Adrak Satkar, Pink Adrak Sector 31, Pink Adrak - BS, Pink Adrak - ABC, Pink Adrak-B2B, Pink Adrak"
+}
