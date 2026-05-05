@@ -1,0 +1,15 @@
+{
+    "name": "PA_Bills",
+    "org_id": "60017004942",
+    "org_name": "Pink Adrak",
+    "url": "https://books.zoho.in/app/60017004942#/bills?filter_by=Status.All&per_page=200&sort_column=created_time&sort_order=D",
+    "table": "zb_pa_bills",
+    "type": "bill",
+    "download_dir": "./downloads",
+    "playwright_profile_dir": "/home/mcsuser/work/zobobooks_automation/.tmp/zobobooks_profile"
+    ,"db_host": "ls-a0d9d5db2b9ca903f872a3fb74666a139738a39c.cngosk2ksv87.ap-south-1.rds.amazonaws.com",
+    "db_port": "5432",
+    "db_name": "Chummuch-DB",
+    "db_user": "chummuchdb",
+    "db_schema": "Zoho_Books"
+}
